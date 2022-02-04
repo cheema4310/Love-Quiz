@@ -1,0 +1,70 @@
+.header-nav {
+  background-color: var(--grey-color);
+  height: 15vh;
+  overflow: hidden;
+}
+
+.nav-ul {
+  width: 60%;
+  margin: 0 auto;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  list-style: none;
+}
+
+.nav-li {
+  font-family: "Roboto", sans-serif;
+}
+
+/* nav Quiz Link */
+.nav-li:nth-child(2) {
+  padding-right: 1.5rem;
+}
+
+.nav-li > a {
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #684c8b;
+}
+
+.nav-li > a:hover {
+  color: var(--extra-color);
+}
+
+/* .nav-li > a:active {
+  color: var(--extra-color);
+} */
+
+.nav-logo {
+  flex: 3;
+}
+
+.nav-logo > a > img {
+  max-width: 5rem;
+}
+
+/* .navActive {
+  color: var(--extra-color);
+} */
+
+@media only screen and (max-width: 480px) {
+  .nav__contact {
+    display: none;
+  }
+  .nav-li > a {
+    font-size: 2rem;
+    filter: drop-shadow(1px 1px 1px rgba(50, 50, 0, 0.5));
+  }
+  .nav-li:nth-child(2) {
+    padding-right: 0;
+  }
+  .nav-logo > a > img {
+    max-width: 6.5rem;
+  }
+}

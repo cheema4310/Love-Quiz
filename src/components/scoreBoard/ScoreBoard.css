@@ -1,0 +1,100 @@
+.score-board {
+  width: 80%;
+  margin: 0 auto;
+  /* height: 90%; */
+  /* padding: 0 0.5rem; */
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  letter-spacing: 0.09rem;
+  background-color: var(--light-color);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 20px 50px 4px;
+  border-radius: 1vw;
+  padding: 1rem;
+}
+
+.score-board__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.score-board__textWrapper {
+  text-align: center;
+}
+.score-board__textWrapper > h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+}
+.score-board__textWrapper > h5 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.dropShadow {
+  filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+}
+
+.score-board__card {
+  /* border: 0.1rem double var(--grey-dark);
+  border-radius: 6px; */
+}
+
+.score-board__table {
+  /* margin: 1rem 1.5rem; */
+  font-family: "Permanent Marker", cursive;
+  font-size: 1rem;
+  table-layout: fixed;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.score-board__table th {
+  padding: 1rem 0.5rem;
+  font-size: 1.2rem;
+}
+
+.textColorWinner {
+  color: rgb(228, 26, 26);
+}
+
+.tVal {
+  text-align: center;
+  padding-left: 1rem;
+}
+
+.score-board__email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.score-board__email-h {
+  font-size: 0.6rem;
+  padding: 0.5rem;
+  font-weight: 700;
+}
+/* .score-board__email-form {
+  width: 100%;
+} */
+
+@media only screen and (max-width: 480px) {
+  .score-board__main {
+    gap: 0;
+    width: 100%;
+  }
+  .score-board__main > h5 {
+    width: 80%;
+    font-size: 0.5rem;
+  }
+
+  .score-board__table {
+    font-size: 0.7rem;
+  }
+  .score-board__table th {
+    font-size: 1rem;
+  }
+}

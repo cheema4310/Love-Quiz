@@ -1,0 +1,112 @@
+.quizStart {
+  height: 77vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Roboto", sans-serif;
+}
+
+.quiz-form {
+  width: 72%;
+  margin: 0 auto;
+  height: 96%;
+  background-color: var(--light-color);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 20px 50px 4px;
+  padding: 0.5rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 1vw;
+}
+
+.quiz-heading {
+  min-width: 100%;
+  text-align: center;
+  letter-spacing: 1.5px;
+  font-size: 1.7rem;
+}
+
+.quiz-inputs {
+  background-color: var(--grey-dark);
+  padding: 2rem;
+  border-radius: 1vw;
+  font-weight: 400;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 20px 50px 4px;
+  color: white;
+  letter-spacing: 1px;
+  width: 70%;
+
+  display: flex;
+  flex-direction: column;
+  /* align-items: baseline; */
+
+  gap: 1rem;
+}
+.quiz-radio-inputs {
+  /* display: flex; */
+}
+
+.quiz-label {
+  display: inline-flex;
+  align-items: center;
+}
+
+.quiz-label__input {
+  margin: 0.8rem;
+}
+
+.quiz-btn {
+  background-color: transparent;
+}
+
+.quiz-btn > button {
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+  border: 0.01rem solid var(--grey-dark);
+  box-shadow: rgba(0, 0, 0, 0.25) 5px 14px 28px,
+    rgba(0, 0, 0, 0.22) 5px 10px 28px;
+
+  font-size: 1.3rem;
+  font-weight: 500;
+
+  cursor: pointer;
+  border: none;
+  color: black;
+  overflow: hidden;
+
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.quiz-btn > button:hover {
+  background-color: var(--extra-color);
+}
+
+@media only screen and (max-width: 480px) {
+  .quiz-form {
+    width: 90%;
+    margin: 0 auto;
+    height: 90%;
+
+    justify-content: center;
+
+    gap: 2rem;
+  }
+  .quiz-inputs {
+    width: 100%;
+    padding: 2rem 0.2rem;
+  }
+  .quiz-heading {
+    font-size: 1.3rem;
+  }
+  .quiz-btn > button:hover {
+    background-color: transparent;
+  }
+  .quiz-btn > button:active {
+    background-color: var(--extra-color);
+  }
+}

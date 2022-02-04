@@ -1,0 +1,111 @@
+.homeSection {
+  background-color: var(--light-color);
+  height: 77vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-textWrapper {
+  width: 65%;
+  margin: 0 auto;
+  height: 80%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: transparent;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 2vh; */
+
+  font-family: "Roboto", sans-serif;
+}
+
+.home-textWrapper > h2 {
+  min-width: 100%;
+  font-weight: 500;
+  font-size: 3rem;
+  text-align: start;
+  font-family: "Oleo Script", cursive;
+  text-decoration: underline;
+}
+
+.home-textInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-textInner > h5 {
+  letter-spacing: 1.5px;
+  font-size: 0.9rem;
+  text-indent: 5%;
+  padding: 0 0.5rem;
+}
+.home-imgWrapper > img {
+  width: 100%;
+  height: auto;
+}
+.home-textWrapper > p {
+  font-weight: 300;
+}
+
+.home-textWrapper > a {
+  text-decoration: none;
+  color: black;
+  background-color: var(--grey-color);
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: rgba(0, 0, 0, 0.3) solid 0.1rem;
+  border-top: none;
+  border-left: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.95px 2.95px 3.6px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: all 0.2s ease-in;
+}
+
+.home-textWrapper > a:hover {
+  background-color: var(--extra-color);
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .home-textWrapper > h2 {
+    font-size: 2rem;
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+  }
+  .home-textInner > h5 {
+    display: none;
+  }
+  .home-imgWrapper > img {
+    width: 50%;
+    height: auto;
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+  }
+  .home-imgWrapper {
+    text-align: end;
+  }
+  .home-textWrapper > p {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .home-textWrapper > h2 {
+    font-size: 1.5rem;
+  }
+  .home-imgWrapper > img {
+    width: 100%;
+    height: auto;
+  }
+  .home-textWrapper > p {
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+  }
+}
